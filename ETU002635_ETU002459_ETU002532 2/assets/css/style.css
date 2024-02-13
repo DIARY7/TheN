@@ -1,0 +1,325 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: url("image/pexels-carolina-castilla-arias-1716861.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 500px;
+    margin: 350px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.pokemon-top-part {
+    width: 200px;
+    height: 100px;
+    background: #F22613;
+    margin: 0 auto;
+    border-radius: 200px 200px 0 0;
+    border: 5px solid #333;
+}
+
+.pokemon-bottom-part {
+    position: relative;
+}
+
+.white-part {
+    width: 200px;
+    height: 100px;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 0 0 200px 200px;
+    border: 5px solid #333;
+}
+
+.black-line {
+    width: 210px;
+    height: 25px;
+    background: #333;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.black-line::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-25%);
+}
+
+.black-line::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-2px);
+    z-index: 999;
+}
+
+.signup-form {
+    background: url("image/pexels-erik-mclean-9661252.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sign-back {
+    background: linear-gradient(rgba(255, 202, 0, 0.4), #FFCA00 60%);
+    border-radius: 10px;
+    padding: 65px 0;
+}
+
+.sign-back h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    letter-spacing: 5px;
+    text-shadow:1px 1px 1px #333
+}
+
+.signup-row {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.signup-row input {
+    padding: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    width: 50%;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.signup-row input::-webkit-input-placeholder {
+    color: #fff;
+  text-shadow:1px 1px 1px rgba(51, 51, 51, 0.6)
+}
+
+.signup-row i {
+    color: #fff;
+    position: relative;
+    left: 20px;
+    text-shadow:1px 1px 1px rgba(51, 51, 51, 0.6)
+}
+
+.signup-row a {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.signup-row a i {
+    left: 0;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.remember:not(:last-child) {
+    margin-right: 30px;
+    color: #af942d;
+}
+.remember:not(:last-child):hover {
+    margin-right: 30px;
+    color: #fff;
+      transition:all 500ms;
+
+}
+
+.remember a {
+    text-decoration: none;
+    color: #af942d;
+    transition:all 500ms;
+}
+.remember a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    top: 1px;
+    transition:all 500ms;
+
+}
+
+.main-forms {
+    overflow: hidden;
+    display: none;
+    position: relative;
+    /* position: absolute;
+    transform: translate(-50%,-50%); */
+}
+
+.red-circle::before {
+    background: #F22613;
+}
+
+.confirm-button {
+    background-color: #FFCA00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #133cf2;
+    color: #fff;
+}
+
+.is-invalid {
+    color: #F22613;
+}
+  
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    bottom: 0;
+    right: 0;
+    opacity: 5;
+}
+
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 0;
+}
+
+.carousel-caption h1{
+     font-size: 100px;
+     font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 18px;
+    font-weight: 2rem;
+}    
+
+.slider-btn{
+    margin-top: 30px;
+}
+
+.slider-btn btn{
+    background-color: antiquewhite;
+    columns: black;
+    border-radius: 1;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+ 
+.btn-1{
+    background-color: #FFCA00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover{
+    background-color: #133cf2;
+    color: #fff;
+}
+
+/* .compte{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #FFCA00;
+    color: #333;
+    border: none;
+}
+
+.compte:hover{
+    background-color: #133cf2;
+    color: #fff;
+} */
+
+.compte:not(:last-child) {
+    margin-right: 30px;
+    color: #fff;
+}
+.compte:not(:last-child):hover {
+    margin-right: 30px;
+    color: #af942d;
+      transition:all 500ms;
+
+}
+
+.compte a {
+    text-decoration: none;
+    color: #fff;
+    transition:all 500ms;
+}
+.compte a:hover {
+    text-decoration: none;
+    color: #af942d;
+}
+
+.custom-bg {
+    background-color: #333;
+  }
+
+.logo-text {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.logo-text-yellow {
+    color: yellow;
+}

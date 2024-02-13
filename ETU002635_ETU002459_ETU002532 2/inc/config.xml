@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <salaire>4500</salaire>
+    <poid_min>5</poid_min>
+    <bonus>30</bonus>
+    <mallus>10</mallus>
+</config>
